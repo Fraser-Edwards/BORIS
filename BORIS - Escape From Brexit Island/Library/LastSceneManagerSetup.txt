@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Elf Adventure/Scene/Worlds/World 4 - Winter/World 4-9.unity
+- path: Assets/Elf Adventure/Scene/Worlds/World 2 - Berlin/World 2-1.unity
   isLoaded: 1
   isActive: 1
