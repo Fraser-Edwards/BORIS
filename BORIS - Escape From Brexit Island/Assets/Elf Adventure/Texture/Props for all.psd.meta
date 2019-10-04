@@ -90,6 +90,7 @@ TextureImporter:
     21300170: vin
     21300172: pret
     21300174: Props for all_0
+    21300176: Props for all_2
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -1731,13 +1732,33 @@ TextureImporter:
         width: 69
         height: 79
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: 2aec698bde687ef4ea432dfd2788bc05
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Props for all_2
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 806
+        width: 70
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04f2b88fcbde7cf43ae2dd084ed86058
       vertices: []
       indices: 
       edges: []
