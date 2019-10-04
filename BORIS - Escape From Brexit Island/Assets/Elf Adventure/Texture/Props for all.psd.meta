@@ -89,6 +89,7 @@ TextureImporter:
     21300168: french_stick
     21300170: vin
     21300172: pret
+    21300174: Props for all_0
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -1610,7 +1611,7 @@ TextureImporter:
         width: 114
         height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1630,7 +1631,7 @@ TextureImporter:
         width: 70
         height: 78
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1646,12 +1647,12 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 414
-        y: 896
-        width: 84
-        height: 122
+        y: 924
+        width: 67
+        height: 91
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 2, y: 0, z: 4, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -1670,7 +1671,7 @@ TextureImporter:
         width: 132
         height: 76
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1690,7 +1691,7 @@ TextureImporter:
         width: 69
         height: 110
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1710,13 +1711,33 @@ TextureImporter:
         width: 96
         height: 105
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: e33c9454adb0c2f4b98846ee5d0da351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Props for all_0
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 388
+        width: 69
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2aec698bde687ef4ea432dfd2788bc05
       vertices: []
       indices: 
       edges: []
