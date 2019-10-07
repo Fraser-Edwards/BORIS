@@ -131,7 +131,7 @@ public class GameManager: MonoBehaviour {
 		State = GameState.Finish;
 		Player.GameFinish ();
 		MenuManager.Instance.Gamefinish ();
-		SoundManager.PlaySfx (soundManager.soundGamefinish, 0.5f);
+		SoundManager.PlaySfx (soundManager.soundGamefinish, 1.0f, true);
 
 		//save coins and points
 		SavedCoins = Coin;
@@ -159,7 +159,7 @@ public class GameManager: MonoBehaviour {
 		State = GameState.Dead;
 		SavedLives--;
 		MenuManager.Instance.GameOver ();
-		SoundManager.PlaySfx (soundManager.soundGameover, 0.5f);
+		SoundManager.PlaySfxDelayed(soundManager.soundGameover, 1.0f, 1.0f, true);
 
 		if (SavedLives <= 0) {
 			//reset all levels and worlds

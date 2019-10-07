@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.Audio;
 using System.Collections;
 /*
  * This is SoundManager
@@ -20,11 +21,17 @@ public class SoundManager : MonoBehaviour {
 	public AudioClip soundGamefinish;
 	public AudioClip soundGameover;
 
-	private AudioSource musicAudio;
-	private AudioSource soundFx;
+    public AudioMixerGroup MusicBus;
+    public AudioMixerGroup SFXBus;
+    public AudioMixerGroup VocalBus;
 
-	//GET and SET
-	public static float MusicVolume{
+
+    private AudioSource musicAudio;
+	private AudioSource soundFx;
+    private AudioSource voiceFx;
+
+    //GET and SET
+    public static float MusicVolume{
 		set{ Instance.musicAudio.volume = value; }
 		get{ return Instance.musicAudio.volume; }
 	}
@@ -38,8 +45,13 @@ public class SoundManager : MonoBehaviour {
 		musicAudio = gameObject.AddComponent<AudioSource> ();
 		musicAudio.loop = true;
 		musicAudio.volume = 0.5f;
-		soundFx = gameObject.AddComponent<AudioSource> ();
-	}
+		soundFx = gameObject.AddComponent<AudioSource>();
+        voiceFx = gameObject.AddComponent<AudioSource>();
+
+        musicAudio.outputAudioMixerGroup = MusicBus;
+        soundFx.outputAudioMixerGroup = SFXBus;
+        voiceFx.outputAudioMixerGroup = VocalBus;
+    }
 	void Start () {
 //		//Check auido and sound
 //		if (!GlobalValue.isMusic)
@@ -49,12 +61,18 @@ public class SoundManager : MonoBehaviour {
 		PlayMusic(musicsGame,musicsGameVolume);
 	}
 
-	public static void PlaySfx(AudioClip clip){
-		Instance.PlaySound(clip, Instance.soundFx);
+	public static void PlaySfx(AudioClip clip, bool voice = false)
+    {
+		Instance.PlaySound(clip, voice ? Instance.voiceFx : Instance.soundFx);
 	}
 
-	public static void PlaySfx(AudioClip clip, float volume){
-		Instance.PlaySound(clip, Instance.soundFx, volume);
+	public static void PlaySfx(AudioClip clip, float volume, bool voice = false)
+    {
+		Instance.PlaySound(clip, voice ? Instance.voiceFx : Instance.soundFx, volume);
+	}
+    public static void PlaySfxDelayed(AudioClip clip, float delay, float volume, bool voice = false)
+    {
+		Instance.PlaySound(clip, voice ? Instance.voiceFx : Instance.soundFx, delay, volume);
 	}
 
 	public static void PlayMusic(AudioClip clip){
@@ -65,7 +83,31 @@ public class SoundManager : MonoBehaviour {
 		Instance.PlaySound (clip, Instance.musicAudio, volume);
 	}
 
-	private void PlaySound(AudioClip clip,AudioSource audioOut){
+    public static void PlayRandomSound(AudioClip[] clips, float volume = 1.0f, bool voice = false)
+    {
+        Instance.PlayRandom(clips, voice ? Instance.voiceFx : Instance.soundFx, volume);
+    }
+
+    private void PlayRandom(AudioClip[] clips, AudioSource audioOut, float volume = 1.0f)
+    {
+        if (clips == null)
+        {
+            return;
+        }
+
+        int index = Random.Range(0, clips.Length);
+        if (audioOut == voiceFx && !voiceFx.isPlaying)
+        {
+            audioOut.clip = clips[index];
+            audioOut.Play();
+        }
+        else if (audioOut != voiceFx)
+        {
+            audioOut.PlayOneShot(clips[index]);
+        }
+    }
+
+    private void PlaySound(AudioClip clip,AudioSource audioOut){
 		if (clip == null) {
 //			Debug.Log ("There are no audio file to play", gameObject);
 			return;
@@ -90,4 +132,23 @@ public class SoundManager : MonoBehaviour {
 		} else
 			audioOut.PlayOneShot (clip, SoundVolume * volume);
 	}
+
+    private void PlaySound(AudioClip clip,AudioSource audioOut, float delay, float volume){
+		if (clip == null) {
+//			Debug.Log ("There are no audio file to play", gameObject);
+			return;
+		}
+
+        if (audioOut == musicAudio)
+        {
+            audioOut.clip = clip;
+            audioOut.Play();
+        }
+        else
+            audioOut.clip = clip;
+            audioOut.volume = SoundVolume * volume;
+            audioOut.PlayDelayed(delay);
+	}
+
+    
 }

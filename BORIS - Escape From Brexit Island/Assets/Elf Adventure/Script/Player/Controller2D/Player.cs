@@ -56,7 +56,11 @@ public class Player : MonoBehaviour, ICanTakeDamage {
 	[Range(0,1)]
 	public float meleeAttackSoundVolume = 0.5f;
 
-	bool isPlayedLandSound;
+    [Header("Voice SFX")]
+    public AudioClip[] HurtVoiceClips;
+    public AudioClip[] AttackVoiceClips;
+
+    bool isPlayedLandSound;
 
 	[Header("Option")]
 	public bool allowMeleeAttack;
@@ -67,8 +71,9 @@ public class Player : MonoBehaviour, ICanTakeDamage {
 	protected MeleeAttack meleeAttack;
 
 	private AudioSource soundFx;
+    private AudioSource voiceFX;
 
-	float gravity;
+    float gravity;
 	float maxJumpVelocity;
 	float minJumpVelocity;
 	[HideInInspector]
@@ -88,7 +93,7 @@ public class Player : MonoBehaviour, ICanTakeDamage {
 	public bool isPlaying { get; private set;}
 	public bool isFinish { get; set;}
 
-	void Awake(){
+    void Awake(){
 		controller = GetComponent<Controller2D> ();
 		anim = GetComponent<Animator> ();
 	}
@@ -296,7 +301,8 @@ public class Player : MonoBehaviour, ICanTakeDamage {
 			if (meleeAttack.Attack ()) {
 				anim.SetTrigger ("melee_attack");
 				SoundManager.PlaySfx (meleeAttackSound, meleeAttackSoundVolume);
-			}
+                SoundManager.PlayRandomSound(AttackVoiceClips, voice: true);
+            }
 		}
 	}
 
@@ -310,7 +316,8 @@ public class Player : MonoBehaviour, ICanTakeDamage {
 			if (rangeAttack.Fire ()) {
 				anim.SetTrigger ("range_attack");
 				SoundManager.PlaySfx (rangeAttackSound, rangeAttackSoundVolume);
-			}
+                SoundManager.PlayRandomSound(AttackVoiceClips, voice: true);
+            }
 		}
 	}
 
@@ -374,10 +381,11 @@ public class Player : MonoBehaviour, ICanTakeDamage {
 			return;
 		
 		SoundManager.PlaySfx (hurtSound, hurtSoundVolume);
-		if (HurtEffect != null)
+        SoundManager.PlayRandomSound(HurtVoiceClips, voice: true);
+        if (HurtEffect != null)
 			Instantiate (HurtEffect, instigator.transform.position, Quaternion.identity);
-
-		if (GodMode)
+        
+        if (GodMode)
 			return;
 
 		Health -= (int)damage;
@@ -385,8 +393,8 @@ public class Player : MonoBehaviour, ICanTakeDamage {
 		if (Health <= 0)
 			LevelManager.Instance.KillPlayer ();
 
-		//set force to player
-		if (force.x != 0 || force.y != 0) {
+        //set force to player
+        if (force.x != 0 || force.y != 0) {
 			var facingDirectionX = Mathf.Sign (transform.position.x - instigator.transform.position.x);
 			var facingDirectionY = Mathf.Sign (velocity.y);
 
@@ -405,7 +413,7 @@ public class Player : MonoBehaviour, ICanTakeDamage {
 			isPlaying = false;
 			StopMove ();
 			SoundManager.PlaySfx (deadSound, deadSoundVolume);
-			soundFx.Stop ();	//stop the sliding wall sound if it's playing
+            soundFx.Stop ();	//stop the sliding wall sound if it's playing
 			anim.SetTrigger ("dead");
 			SetForce (new Vector2 (0, 7f));
 			Health = 0;
