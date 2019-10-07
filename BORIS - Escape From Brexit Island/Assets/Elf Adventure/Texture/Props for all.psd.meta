@@ -608,11 +608,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 4
-        y: 129
-        width: 70
-        height: 55
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        y: 137
+        width: 84
+        height: 45
+      alignment: 9
+      pivot: {x: 0.48085058, y: 0.46829143}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -727,12 +727,12 @@ TextureImporter:
       name: Monster-Bird-Wing.L
       rect:
         serializedVersion: 2
-        x: 7
-        y: 116
-        width: 20
-        height: 12
+        x: 42
+        y: 188
+        width: 45
+        height: 28
       alignment: 9
-      pivot: {x: 0.86397964, y: 0.8370177}
+      pivot: {x: 0.29930487, y: 0.70326996}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -747,12 +747,12 @@ TextureImporter:
       name: Monster-Bird-Wing.R
       rect:
         serializedVersion: 2
-        x: 44
-        y: 115
-        width: 23
-        height: 13
+        x: 59
+        y: 226
+        width: 63
+        height: 30
       alignment: 9
-      pivot: {x: 0.12488572, y: 0.72813535}
+      pivot: {x: 0.3482717, y: 0.811762}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1067,9 +1067,9 @@ TextureImporter:
       name: Props for all_70
       rect:
         serializedVersion: 2
-        x: 323
-        y: 0
-        width: 76
+        x: 332
+        y: 5
+        width: 54
         height: 69
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -1752,7 +1752,7 @@ TextureImporter:
         width: 70
         height: 65
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
