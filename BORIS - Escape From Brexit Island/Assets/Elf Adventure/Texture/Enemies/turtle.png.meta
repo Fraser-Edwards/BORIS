@@ -1,7 +1,5 @@
 fileFormatVersion: 2
 guid: fc485961ae7fb6c4b837d142ff0b1591
-timeCreated: 1465110551
-licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
     21300000: turtle_0
@@ -19,14 +17,18 @@ TextureImporter:
     21300024: turtle_12
     21300026: turtle_13
     21300028: turtle_14
-  serializedVersion: 2
+    21300030: turtle_15
+  externalObjects: {}
+  serializedVersion: 9
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
+    sRGBTexture: 1
     linearTexture: 0
-    correctGamma: 0
     fadeOut: 0
     borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
     mipMapFadeDistanceStart: 1
     mipMapFadeDistanceEnd: 3
   bumpmap:
@@ -35,37 +37,59 @@ TextureImporter:
     heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
   grayScaleToAlpha: 0
-  generateCubemap: 0
+  generateCubemap: 6
   cubemapConvolution: 0
-  cubemapConvolutionSteps: 7
-  cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
   textureFormat: -1
   maxTextureSize: 2048
   textureSettings:
+    serializedVersion: 2
     filterMode: -1
     aniso: 16
-    mipBias: -1
-    wrapMode: 1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
   nPOTScale: 0
   lightmap: 0
-  rGBM: 0
   compressionQuality: 50
-  allowsAlphaSplitting: 0
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
   alphaIsTransparency: 1
+  spriteTessellationDetail: -1
   textureType: 8
-  buildTargetSettings: []
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
   spriteSheet:
+    serializedVersion: 2
     sprites:
-    - name: turtle_0
+    - serializedVersion: 2
+      name: turtle_0
       rect:
         serializedVersion: 2
         x: 0
@@ -75,15 +99,17 @@ TextureImporter:
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 15.5, y: 55}
-        - {x: -19.5, y: 55}
-        - {x: -41.5, y: 29}
-        - {x: -41.5, y: 0}
-        - {x: 41.5, y: 0}
-        - {x: 41.5, y: 10}
-        - {x: 25.5, y: 44}
-    - name: turtle_1
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84409acaca3827840b049940c380bbb5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turtle_1
       rect:
         serializedVersion: 2
         x: 91
@@ -93,16 +119,17 @@ TextureImporter:
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 15.5, y: 53}
-        - {x: -20.5, y: 53}
-        - {x: -40.5, y: 28}
-        - {x: -41.5, y: 19}
-        - {x: -41.5, y: 0}
-        - {x: 41.5, y: 0}
-        - {x: 41.5, y: 10}
-        - {x: 29.5, y: 49}
-    - name: turtle_2
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d696a9cabf29f0247849ad58887fb318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turtle_2
       rect:
         serializedVersion: 2
         x: 186
@@ -112,73 +139,77 @@ TextureImporter:
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 21.5, y: 51}
-        - {x: -19.5, y: 51}
-        - {x: -33.5, y: 46}
-        - {x: -33.5, y: 2}
-        - {x: -22.5, y: 0}
-        - {x: 32.5, y: 0}
-        - {x: 33.5, y: 2}
-        - {x: 33.5, y: 25}
-        - {x: 28.5, y: 43}
-    - name: turtle_3
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7208e2ef657dd5540b40f6b25e3d8721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turtle_3
       rect:
         serializedVersion: 2
-        x: 0
+        x: 15
         y: 238
-        width: 83
-        height: 56
+        width: 86
+        height: 61
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -25.5, y: 56}
-        - {x: -41.5, y: 30}
-        - {x: -41.5, y: 0}
-        - {x: 41.5, y: 0}
-        - {x: 41.5, y: 18}
-        - {x: 21.5, y: 56}
-    - name: turtle_4
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44caa45ad429e334082bf531c1498544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turtle_4
       rect:
         serializedVersion: 2
-        x: 90
+        x: 103
         y: 238
-        width: 84
-        height: 53
+        width: 88
+        height: 61
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 2, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64731e074e9ba694f884a5289436a828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turtle_5
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 238
+        width: 72
+        height: 61
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -21, y: 53}
-        - {x: -42, y: 33}
-        - {x: -42, y: 0}
-        - {x: 42, y: 0}
-        - {x: 42, y: 17}
-        - {x: 41, y: 22}
-        - {x: 28, y: 50}
-        - {x: 17, y: 53}
-    - name: turtle_5
-      rect:
-        serializedVersion: 2
-        x: 186
-        y: 238
-        width: 67
-        height: 51
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 21.5, y: 51}
-        - {x: -23.5, y: 51}
-        - {x: -33.5, y: 48}
-        - {x: -33.5, y: 10}
-        - {x: -18.5, y: 0}
-        - {x: 26.5, y: 0}
-        - {x: 33.5, y: 5}
-        - {x: 33.5, y: 23}
-        - {x: 28.5, y: 42}
-    - name: turtle_6
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1cab210f9ada7745af85015dd8dcb75
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turtle_6
       rect:
         serializedVersion: 2
         x: 0
@@ -188,15 +219,17 @@ TextureImporter:
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -27.5, y: 67}
-        - {x: -33.5, y: 64}
-        - {x: -41.5, y: 36}
-        - {x: -41.5, y: 0}
-        - {x: 41.5, y: 0}
-        - {x: 41.5, y: 48}
-        - {x: 33.5, y: 67}
-    - name: turtle_7
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 383ad7e41932aa84c88f0c5c8cfc7150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turtle_7
       rect:
         serializedVersion: 2
         x: 91
@@ -206,14 +239,17 @@ TextureImporter:
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -36.5, y: 66}
-        - {x: -41.5, y: 38}
-        - {x: -41.5, y: 0}
-        - {x: 41.5, y: 0}
-        - {x: 41.5, y: 43}
-        - {x: 37.5, y: 66}
-    - name: turtle_8
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59ea03a68eaaca940948869c7720c2b5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turtle_8
       rect:
         serializedVersion: 2
         x: 180
@@ -223,139 +259,166 @@ TextureImporter:
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -23, y: 64}
-        - {x: -36, y: 53}
-        - {x: -36, y: 16}
-        - {x: -22, y: 0}
-        - {x: 31, y: 0}
-        - {x: 36, y: 10}
-        - {x: 36, y: 50}
-        - {x: 23, y: 64}
-    - name: turtle_9
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d6f6109c9d52db42bcc59c3d1374557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turtle_9
       rect:
         serializedVersion: 2
-        x: 0
+        x: 11
         y: 80
-        width: 83
-        height: 66
+        width: 90
+        height: 63
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 34.5, y: 35}
-        - {x: 27.5, y: 66}
-        - {x: -31.5, y: 66}
-        - {x: -41.5, y: 62}
-        - {x: -41.5, y: 0}
-        - {x: 41.5, y: 0}
-        - {x: 41.5, y: 14}
-        - {x: 38.5, y: 34}
-    - name: turtle_10
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b8448029ddb7484994d4701511b3bd8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turtle_10
       rect:
         serializedVersion: 2
-        x: 91
+        x: 100
         y: 80
-        width: 83
-        height: 66
+        width: 91
+        height: 62
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -41.5, y: 37}
-        - {x: -41.5, y: 0}
-        - {x: 41.5, y: 0}
-        - {x: 41.5, y: 55}
-        - {x: 36.5, y: 66}
-        - {x: -21.5, y: 66}
-        - {x: -28.5, y: 62}
-        - {x: -39.5, y: 48}
-    - name: turtle_11
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 441089ee3b915a54899e325f37319535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turtle_11
       rect:
         serializedVersion: 2
-        x: 180
+        x: 191
         y: 81
+        width: 73
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10d2c2f96a192b8459721e409c36e9d0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turtle_12
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 0
+        width: 88
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 551246e24cb7ef14587ac591a2192567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turtle_13
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 0
+        width: 88
+        height: 62
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2f531f0a5e2ab248a90403229777377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turtle_14
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
         width: 72
         height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 23, y: 53}
-        - {x: 19, y: 61}
-        - {x: 12, y: 64}
-        - {x: -17, y: 64}
-        - {x: -30, y: 56}
-        - {x: -36, y: 42}
-        - {x: -36, y: 15}
-        - {x: -28, y: 0}
-        - {x: 30, y: 0}
-        - {x: 36, y: 2}
-        - {x: 36, y: 37}
-        - {x: 27, y: 54}
-    - name: turtle_12
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79966742bcd5e004c8263da2a5f1c544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turtle_15
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 83
-        height: 66
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 234
+        y: 74
+        width: 30
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 16.5, y: 66}
-        - {x: -12.5, y: 66}
-        - {x: -28.5, y: 59}
-        - {x: -30.5, y: 53}
-        - {x: -39.5, y: 45}
-        - {x: -41.5, y: 21}
-        - {x: -41.5, y: 0}
-        - {x: 41.5, y: 0}
-        - {x: 41.5, y: 35}
-        - {x: 30.5, y: 57}
-    - name: turtle_13
-      rect:
-        serializedVersion: 2
-        x: 91
-        y: 0
-        width: 83
-        height: 65
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 29.5, y: 65}
-        - {x: -14.5, y: 65}
-        - {x: -27.5, y: 57}
-        - {x: -37.5, y: 42}
-        - {x: -41.5, y: 11}
-        - {x: -41.5, y: 0}
-        - {x: 41.5, y: 0}
-        - {x: 41.5, y: 16}
-        - {x: 39.5, y: 44}
-    - name: turtle_14
-      rect:
-        serializedVersion: 2
-        x: 181
-        y: 0
-        width: 71
-        height: 64
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 22.5, y: 64}
-        - {x: -22.5, y: 64}
-        - {x: -35.5, y: 53}
-        - {x: -35.5, y: 13}
-        - {x: -22.5, y: 0}
-        - {x: 26.5, y: 0}
-        - {x: 35.5, y: 9}
-        - {x: 35.5, y: 37}
-        - {x: 27.5, y: 56}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab727261616cdd949b7d12bd9ba2fb72
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 726e88c69935e1545a76a5e6ca1ee439
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
   spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
