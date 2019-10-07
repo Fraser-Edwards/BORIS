@@ -412,7 +412,7 @@ public class Player : MonoBehaviour, ICanTakeDamage {
 		if (isPlaying) {
 			isPlaying = false;
 			StopMove ();
-			SoundManager.PlaySfx (deadSound, deadSoundVolume);
+			//SoundManager.PlaySfxDelayed(deadSound, 1.0f, deadSoundVolume, voice: true);
             soundFx.Stop ();	//stop the sliding wall sound if it's playing
 			anim.SetTrigger ("dead");
 			SetForce (new Vector2 (0, 7f));
