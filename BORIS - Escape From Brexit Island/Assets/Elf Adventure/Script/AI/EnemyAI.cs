@@ -32,9 +32,9 @@ public class EnemyAI : MonoBehaviour, ICanTakeDamage, IPlayerRespawnListener {
 	public AudioClip hurtSound;
 	[Range(0,1)]
 	public float hurtSoundVolume = 0.5f;
-	public AudioClip deadSound;
+	public AudioClip[] deadSounds;
 	[Range(0,1)]
-	public float deadSoundVolume = 0.5f;
+	public float deadSoundVolume = 1.0f;
 
 	[Header("Projectile")]
 	public bool isUseProjectile;
@@ -177,7 +177,7 @@ public class EnemyAI : MonoBehaviour, ICanTakeDamage, IPlayerRespawnListener {
 //		transform.localScale = new Vector3 (1, -1, 1);	//fall
 
 		StopAllCoroutines ();
-		SoundManager.PlaySfx (deadSound, deadSoundVolume);
+        SoundManager.PlayRandomSound(deadSounds, deadSoundVolume, true);
 		if (pointToGivePlayer != 0) {
 			GameManager.Instance.AddPoint (pointToGivePlayer);
 			GameManager.Instance.ShowFloatingText ("+" + pointToGivePlayer, transform.position, Color.yellow);
