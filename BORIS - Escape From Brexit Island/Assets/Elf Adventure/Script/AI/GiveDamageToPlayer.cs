@@ -16,7 +16,7 @@ public class GiveDamageToPlayer : MonoBehaviour {
 
 	[Tooltip("Give damage to this object when Player jump on his head")]
 	public bool canBeKillOnHead = false;
-	public float damageOnHead;
+	public float damageOnHead;    
 
 	void OnTriggerStay2D(Collider2D other){
 		var Player = other.GetComponent<Player> ();

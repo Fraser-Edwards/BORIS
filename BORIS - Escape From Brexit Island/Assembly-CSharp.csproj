@@ -118,6 +118,7 @@
     <Compile Include="Assets\Elf Adventure\Script\AI\PathDefinition.cs" />
     <Compile Include="Assets\Elf Adventure\Script\AI\PathedProjectile.cs" />
     <Compile Include="Assets\Elf Adventure\Script\AI\PathedProjectileSpawner.cs" />
+    <Compile Include="Assets\Elf Adventure\Script\AI\PlayerLoseCoins.cs" />
     <Compile Include="Assets\Elf Adventure\Script\AI\Projectile.cs" />
     <Compile Include="Assets\Elf Adventure\Script\AI\SimpleProjectile.cs" />
     <Compile Include="Assets\Elf Adventure\Script\AutoSpawn.cs" />

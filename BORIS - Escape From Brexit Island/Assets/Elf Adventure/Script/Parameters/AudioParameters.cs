@@ -9,11 +9,7 @@ public class AudioParameters : ScriptableObject
 {
     #region Variables
 
-    public AudioClip[] CoinAudioClips;
-    public AudioClip[] DeadAudioClips;
-    public AudioClip[] HurtAudioClips;
-    public AudioClip[] WinAudioClips;
-    public AudioClip[] AttackAudioClips;
+    public AudioClip[] AudioClips;
 
     static AudioParameters sm_instance;
 
