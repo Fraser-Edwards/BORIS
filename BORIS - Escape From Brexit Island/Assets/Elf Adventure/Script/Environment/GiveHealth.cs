@@ -9,9 +9,11 @@ public class GiveHealth : MonoBehaviour,IPlayerRespawnListener
 	public AudioClip soundEffect;
 	[Range(0,1)]
 	public float soundEffectVolume = 0.5f;
-
-	// Update is called once per frame
-	void OnTriggerEnter2D(Collider2D other){
+    public AudioParameters passportSound;
+    [Range(0, 1)]
+    public float passportSoundVolume = 0.5f;
+    // Update is called once per frame
+    void OnTriggerEnter2D(Collider2D other){
 		var Player = other.gameObject.GetComponent<Player> ();
 		if (Player == null)
 			return;
@@ -22,7 +24,9 @@ public class GiveHealth : MonoBehaviour,IPlayerRespawnListener
 
 		SoundManager.PlaySfx (soundEffect, soundEffectVolume);
 
-		gameObject.SetActive (false);
+        SoundManager.PlayRandomSound(passportSound.AudioClips, passportSoundVolume, true);
+
+        gameObject.SetActive (false);
 	}
 
 	#region IPlayerRespawnListener implementation

@@ -7,7 +7,7 @@ public class Coin : MonoBehaviour, IPlayerRespawnListener {
 	public GameObject Effect;
 	public bool isRespawnCheckPoint = true;
     public AudioClip soundSFX;
-    public AudioClip[] soundClips;
+    public AudioParameters soundClips;
 	[Range(0,1)]
 	public float soundVolume = 0.5f;
 
@@ -15,7 +15,7 @@ public class Coin : MonoBehaviour, IPlayerRespawnListener {
 		if (other.gameObject.GetComponent<Player> () == null)
 			return;
 
-		SoundManager.PlayRandomSound(soundClips, soundVolume, voice: true);
+		SoundManager.PlayRandomSound(soundClips.AudioClips, soundVolume, voice: true);
         SoundManager.PlaySfx(soundSFX, soundVolume);
 
         GameManager.Instance.AddCoin (coinToAdd);

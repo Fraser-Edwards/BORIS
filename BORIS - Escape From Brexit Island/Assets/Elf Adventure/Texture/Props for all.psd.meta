@@ -91,6 +91,7 @@ TextureImporter:
     21300172: pret
     21300174: Props for all_0
     21300176: Props for all_2
+    21300178: Platform_easy
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -1759,6 +1760,26 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 04f2b88fcbde7cf43ae2dd084ed86058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Platform_easy
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 219
+        width: 93
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c3b013514bc1b043b0e2ece97da138f
       vertices: []
       indices: 
       edges: []

@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class MonsterIV : MonoBehaviour, ICanTakeDamage, IPlayerRespawnListener {
-	public AudioClip soundDead;
+	public AudioParameters soundDead;
 	public GameObject deadFx;
 	public int scoreRewarded = 200;
 	public Transform linePoint;
@@ -24,7 +24,7 @@ public class MonsterIV : MonoBehaviour, ICanTakeDamage, IPlayerRespawnListener {
 	}
 
 	public void Dead(){
-		SoundManager.PlaySfx(soundDead);
+		SoundManager.PlayRandomSound(soundDead.AudioClips, 1.0f, true);
 		GameManager.Instance.AddPoint(scoreRewarded);
 
 		if (deadFx != null)
