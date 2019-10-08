@@ -52,13 +52,11 @@ public class GameManager: MonoBehaviour {
 		Point += addpoint;
 	}
 
-    public void AddCoin(int coins)
-    {
-        Coin += coins;
-    }
-	
+	public void AddCoin(int addcoin){
+		Coin += addcoin;
+	}
 
-    public void AddBullet(int addbullet){
+	public void AddBullet(int addbullet){
 		Bullet += addbullet;
 	}
 

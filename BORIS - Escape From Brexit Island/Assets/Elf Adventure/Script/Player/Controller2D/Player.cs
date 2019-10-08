@@ -55,13 +55,10 @@ public class Player : MonoBehaviour, ICanTakeDamage {
 	public AudioClip meleeAttackSound;
 	[Range(0,1)]
 	public float meleeAttackSoundVolume = 0.5f;
-    public AudioClip LostCoinSound;
-    [Range(0, 1)]
-    public float lostCoinSoundVolume = 0.5f;
 
     [Header("Voice SFX")]
-    public AudioParameters HurtVoiceClips;
-    public AudioParameters AttackVoiceClips;
+    public AudioClip[] HurtVoiceClips;
+    public AudioClip[] AttackVoiceClips;
 
     bool isPlayedLandSound;
 
@@ -304,7 +301,7 @@ public class Player : MonoBehaviour, ICanTakeDamage {
 			if (meleeAttack.Attack ()) {
 				anim.SetTrigger ("melee_attack");
 				SoundManager.PlaySfx (meleeAttackSound, meleeAttackSoundVolume);
-                SoundManager.PlayRandomSound(AttackVoiceClips.AudioClips, voice: true);
+                SoundManager.PlayRandomSound(AttackVoiceClips, voice: true);
             }
 		}
 	}
@@ -319,7 +316,7 @@ public class Player : MonoBehaviour, ICanTakeDamage {
 			if (rangeAttack.Fire ()) {
 				anim.SetTrigger ("range_attack");
 				SoundManager.PlaySfx (rangeAttackSound, rangeAttackSoundVolume);
-                SoundManager.PlayRandomSound(AttackVoiceClips.AudioClips, voice: true);
+                SoundManager.PlayRandomSound(AttackVoiceClips, voice: true);
             }
 		}
 	}
@@ -384,7 +381,7 @@ public class Player : MonoBehaviour, ICanTakeDamage {
 			return;
 		
 		SoundManager.PlaySfx (hurtSound, hurtSoundVolume);
-        SoundManager.PlayRandomSound(HurtVoiceClips.AudioClips, voice: true);
+        SoundManager.PlayRandomSound(HurtVoiceClips, voice: true);
         if (HurtEffect != null)
 			Instantiate (HurtEffect, instigator.transform.position, Quaternion.identity);
         
@@ -406,23 +403,7 @@ public class Player : MonoBehaviour, ICanTakeDamage {
 		}
 	}
 
-    public void LoseCoins(int numCoins)
-    {
-        if (!isPlaying)
-            return;
-
-        SoundManager.PlayRandomSound(HurtVoiceClips.AudioClips, voice: true);
-        SoundManager.PlaySfx(LostCoinSound);
-
-        if (GodMode)
-            return;
-
-        int currentCoin = GameManager.Instance.Coin;
-        GameManager.Instance.AddCoin(((currentCoin) / (100/numCoins)) * -1);
-        
-    }
-
-    public void GiveHealth(int hearthToGive, GameObject instigator){
+	public void GiveHealth(int hearthToGive, GameObject instigator){
 		Health = Mathf.Min (Health + hearthToGive, maxHealth);
 		GameManager.Instance.ShowFloatingText ("+" + hearthToGive, transform.position, Color.red);
 	}

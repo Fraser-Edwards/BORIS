@@ -53,6 +53,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
      <Compile Include="Assets\Admob\Ads\AdsController.cs" />
      <Compile Include="Assets\Admob\GoogleMobileAds\Api\AdFailedToLoadEventArgs.cs" />
      <Compile Include="Assets\Admob\GoogleMobileAds\Api\AdPosition.cs" />
@@ -422,6 +423,376 @@
  <Reference Include="Boo.Lang">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.14f1/Editor/Data/MonoBleedingEdge/lib/mono/unity/Boo.Lang.dll</HintPath>
  </Reference>
+=======
+    <Compile Include="Assets\Admob\Ads\AdsController.cs" />
+    <Compile Include="Assets\Admob\GoogleMobileAds\Api\AdFailedToLoadEventArgs.cs" />
+    <Compile Include="Assets\Admob\GoogleMobileAds\Api\AdPosition.cs" />
+    <Compile Include="Assets\Admob\GoogleMobileAds\Api\AdRequest.cs" />
+    <Compile Include="Assets\Admob\GoogleMobileAds\Api\AdSize.cs" />
+    <Compile Include="Assets\Admob\GoogleMobileAds\Api\BannerView.cs" />
+    <Compile Include="Assets\Admob\GoogleMobileAds\Api\Gender.cs" />
+    <Compile Include="Assets\Admob\GoogleMobileAds\Api\ICustomInAppPurchase.cs" />
+    <Compile Include="Assets\Admob\GoogleMobileAds\Api\ICustomInAppPurchaseProcessor.cs" />
+    <Compile Include="Assets\Admob\GoogleMobileAds\Api\IDefaultInAppPurchaseProcessor.cs" />
+    <Compile Include="Assets\Admob\GoogleMobileAds\Api\IInAppPurchaseResult.cs" />
+    <Compile Include="Assets\Admob\GoogleMobileAds\Api\InterstitialAd.cs" />
+    <Compile Include="Assets\Admob\GoogleMobileAds\Api\Reward.cs" />
+    <Compile Include="Assets\Admob\GoogleMobileAds\Api\RewardBasedVideoAd.cs" />
+    <Compile Include="Assets\Admob\GoogleMobileAds\Common\DummyClient.cs" />
+    <Compile Include="Assets\Admob\GoogleMobileAds\Common\IBannerClient.cs" />
+    <Compile Include="Assets\Admob\GoogleMobileAds\Common\IInterstitialClient.cs" />
+    <Compile Include="Assets\Admob\GoogleMobileAds\Common\IRewardBasedVideoAdClient.cs" />
+    <Compile Include="Assets\Admob\GoogleMobileAds\Platforms\Android\BannerClient.cs" />
+    <Compile Include="Assets\Admob\GoogleMobileAds\Platforms\Android\CustomInAppPurchaseListener.cs" />
+    <Compile Include="Assets\Admob\GoogleMobileAds\Platforms\Android\DefaultInAppPurchaseListener.cs" />
+    <Compile Include="Assets\Admob\GoogleMobileAds\Platforms\Android\InAppPurchase.cs" />
+    <Compile Include="Assets\Admob\GoogleMobileAds\Platforms\Android\InAppPurchaseResult.cs" />
+    <Compile Include="Assets\Admob\GoogleMobileAds\Platforms\Android\InterstitialClient.cs" />
+    <Compile Include="Assets\Admob\GoogleMobileAds\Platforms\Android\RewardBasedVideoAdClient.cs" />
+    <Compile Include="Assets\Admob\GoogleMobileAds\Platforms\Android\Utils.cs" />
+    <Compile Include="Assets\Admob\GoogleMobileAds\Platforms\GoogleMobileAdsClientFactory.cs" />
+    <Compile Include="Assets\Admob\GoogleMobileAds\Platforms\iOS\BannerClient.cs" />
+    <Compile Include="Assets\Admob\GoogleMobileAds\Platforms\iOS\Externs.cs" />
+    <Compile Include="Assets\Admob\GoogleMobileAds\Platforms\iOS\InterstitialClient.cs" />
+    <Compile Include="Assets\Admob\GoogleMobileAds\Platforms\iOS\MonoPInvokeCallbackAttribute.cs" />
+    <Compile Include="Assets\Admob\GoogleMobileAds\Platforms\iOS\RewardBasedVideoAdClient.cs" />
+    <Compile Include="Assets\Admob\GoogleMobileAds\Platforms\iOS\Utils.cs" />
+    <Compile Include="Assets\Elf Adventure\Script\AI\BirdAI.cs" />
+    <Compile Include="Assets\Elf Adventure\Script\AI\BirdDetectPlayerHelper.cs" />
+    <Compile Include="Assets\Elf Adventure\Script\AI\BOSS_1.cs" />
+    <Compile Include="Assets\Elf Adventure\Script\AI\BOSS_2.cs" />
+    <Compile Include="Assets\Elf Adventure\Script\AI\BOSS_3.cs" />
+    <Compile Include="Assets\Elf Adventure\Script\AI\ChasingStone.cs" />
+    <Compile Include="Assets\Elf Adventure\Script\AI\DetectMonsterFalling.cs" />
+    <Compile Include="Assets\Elf Adventure\Script\AI\DetectPlayerAndSendMessage.cs" />
+    <Compile Include="Assets\Elf Adventure\Script\AI\EnemyAI.cs" />
+    <Compile Include="Assets\Elf Adventure\Script\AI\FireBallAI.cs" />
+    <Compile Include="Assets\Elf Adventure\Script\AI\FireEvil.cs" />
+    <Compile Include="Assets\Elf Adventure\Script\AI\FishAI.cs" />
+    <Compile Include="Assets\Elf Adventure\Script\AI\FlameFire.cs" />
+    <Compile Include="Assets\Elf Adventure\Script\AI\GiveDamageToPlayer.cs" />
+    <Compile Include="Assets\Elf Adventure\Script\AI\HealthBarEnemy.cs" />
+    <Compile Include="Assets\Elf Adventure\Script\AI\MonsterFish.cs" />
+    <Compile Include="Assets\Elf Adventure\Script\AI\MonsterFishDetect.cs" />
+    <Compile Include="Assets\Elf Adventure\Script\AI\MonsterIV.cs" />
+    <Compile Include="Assets\Elf Adventure\Script\AI\MonsterSimpleAI.cs" />
+    <Compile Include="Assets\Elf Adventure\Script\AI\MonsterSnail.cs" />
+    <Compile Include="Assets\Elf Adventure\Script\AI\MonsterTriggerHelper.cs" />
+    <Compile Include="Assets\Elf Adventure\Script\AI\PathDefinition.cs" />
+    <Compile Include="Assets\Elf Adventure\Script\AI\PathedProjectile.cs" />
+    <Compile Include="Assets\Elf Adventure\Script\AI\PathedProjectileSpawner.cs" />
+    <Compile Include="Assets\Elf Adventure\Script\AI\Projectile.cs" />
+    <Compile Include="Assets\Elf Adventure\Script\AI\SimpleProjectile.cs" />
+    <Compile Include="Assets\Elf Adventure\Script\AutoSpawn.cs" />
+    <Compile Include="Assets\Elf Adventure\Script\CameraFollow.cs" />
+    <Compile Include="Assets\Elf Adventure\Script\Environment\Block.cs" />
+    <Compile Include="Assets\Elf Adventure\Script\Environment\Coin.cs" />
+    <Compile Include="Assets\Elf Adventure\Script\Environment\GameFinishFlag.cs" />
+    <Compile Include="Assets\Elf Adventure\Script\Environment\GiveBullet.cs" />
+    <Compile Include="Assets\Elf Adventure\Script\Environment\GiveHealth.cs" />
+    <Compile Include="Assets\Elf Adventure\Script\Environment\ItemAddPoint.cs" />
+    <Compile Include="Assets\Elf Adventure\Script\Environment\Spring.cs" />
+    <Compile Include="Assets\Elf Adventure\Script\Environment\WaterScrollingEffect.cs" />
+    <Compile Include="Assets\Elf Adventure\Script\GUI\CharacterHolder.cs" />
+    <Compile Include="Assets\Elf Adventure\Script\GUI\ControllerInput.cs" />
+    <Compile Include="Assets\Elf Adventure\Script\GUI\FloatingText.cs" />
+    <Compile Include="Assets\Elf Adventure\Script\GUI\LoadingSreen.cs" />
+    <Compile Include="Assets\Elf Adventure\Script\GUI\MainMenu_ChracterChoose.cs" />
+    <Compile Include="Assets\Elf Adventure\Script\GUI\MainMenu_Level.cs" />
+    <Compile Include="Assets\Elf Adventure\Script\GUI\MainMenu_StartMenu.cs" />
+    <Compile Include="Assets\Elf Adventure\Script\GUI\MainMenu_World.cs" />
+    <Compile Include="Assets\Elf Adventure\Script\GUI\MainMenuHomeScene.cs" />
+    <Compile Include="Assets\Elf Adventure\Script\GUI\MainMenuShopItems.cs" />
+    <Compile Include="Assets\Elf Adventure\Script\GUI\MainMenuUpdateCoins.cs" />
+    <Compile Include="Assets\Elf Adventure\Script\GUI\Menu_Gamefinish.cs" />
+    <Compile Include="Assets\Elf Adventure\Script\GUI\Menu_Gameover.cs" />
+    <Compile Include="Assets\Elf Adventure\Script\GUI\Menu_GUI.cs" />
+    <Compile Include="Assets\Elf Adventure\Script\GUI\Menu_StartScreen.cs" />
+    <Compile Include="Assets\Elf Adventure\Script\GUI\MenuManager.cs" />
+    <Compile Include="Assets\Elf Adventure\Script\GUI\ResetData.cs" />
+    <Compile Include="Assets\Elf Adventure\Script\Helper\AutoDestroy.cs" />
+    <Compile Include="Assets\Elf Adventure\Script\Helper\BackGroundController.cs" />
+    <Compile Include="Assets\Elf Adventure\Script\Helper\BlockDestroyEffect.cs" />
+    <Compile Include="Assets\Elf Adventure\Script\Helper\CameraFadeInEffect.cs" />
+    <Compile Include="Assets\Elf Adventure\Script\Helper\CloseGateBoss.cs" />
+    <Compile Include="Assets\Elf Adventure\Script\Helper\FollowObject.cs" />
+    <Compile Include="Assets\Elf Adventure\Script\Helper\KillPlayerOnTouch.cs" />
+    <Compile Include="Assets\Elf Adventure\Script\Helper\RayCastCheckCollision.cs" />
+    <Compile Include="Assets\Elf Adventure\Script\Helper\ResetBoundCamera.cs" />
+    <Compile Include="Assets\Elf Adventure\Script\Helper\SpawnItem.cs" />
+    <Compile Include="Assets\Elf Adventure\Script\Parameters\AudioParameters.cs" />
+    <Compile Include="Assets\Elf Adventure\Script\PlatformController.cs" />
+    <Compile Include="Assets\Elf Adventure\Script\Player\Controller2D\Controller2D.cs" />
+    <Compile Include="Assets\Elf Adventure\Script\Player\Controller2D\Player.cs" />
+    <Compile Include="Assets\Elf Adventure\Script\Player\Controller2D\RaycastController.cs" />
+    <Compile Include="Assets\Elf Adventure\Script\Player\HealthBar.cs" />
+    <Compile Include="Assets\Elf Adventure\Script\Player\ICanTakeDamage.cs" />
+    <Compile Include="Assets\Elf Adventure\Script\Player\IPlayerRespawnListener.cs" />
+    <Compile Include="Assets\Elf Adventure\Script\Player\MeleeAttack.cs" />
+    <Compile Include="Assets\Elf Adventure\Script\Player\RangeAttack.cs" />
+    <Compile Include="Assets\Elf Adventure\Script\SimplePathedMoving.cs" />
+    <Compile Include="Assets\Elf Adventure\Script\System\CheckPoint.cs" />
+    <Compile Include="Assets\Elf Adventure\Script\System\GameManager.cs" />
+    <Compile Include="Assets\Elf Adventure\Script\System\GlobalValue.cs" />
+    <Compile Include="Assets\Elf Adventure\Script\System\LevelManager.cs" />
+    <Compile Include="Assets\Elf Adventure\Script\System\SoundManager.cs" />
+    <Compile Include="Assets\MainMenuHelper.cs" />
+    <None Include="Assets\Admob\Plugins\Android\GoogleMobileAdsPlugin\AndroidManifest.xml" />
+    <None Include="Assets\Admob\Readme.txt" />
+    <None Include="Assets\Admob\Plugins\Android\AndroidManifest.xml" />
+    <Reference Include="Unity.TextMeshPro.Editor">
+      <HintPath>D:/UNITY_PROJECTS/BORIS/BORIS/BORIS - Escape From Brexit Island/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.PackageManagerUI.Editor">
+      <HintPath>D:/UNITY_PROJECTS/BORIS/BORIS/BORIS - Escape From Brexit Island/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.CollabProxy.Editor">
+      <HintPath>D:/UNITY_PROJECTS/BORIS/BORIS/BORIS - Escape From Brexit Island/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>D:/UNITY_PROJECTS/BORIS/BORIS/BORIS - Escape From Brexit Island/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Analytics.DataPrivacy">
+      <HintPath>D:/UNITY_PROJECTS/BORIS/BORIS/BORIS - Escape From Brexit Island/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AIModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.2f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ARModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.2f1/Editor/Data/Managed/UnityEngine/UnityEngine.ARModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AccessibilityModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.2f1/Editor/Data/Managed/UnityEngine/UnityEngine.AccessibilityModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.2f1/Editor/Data/Managed/UnityEngine/UnityEngine.AnimationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.2f1/Editor/Data/Managed/UnityEngine/UnityEngine.AssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.2f1/Editor/Data/Managed/UnityEngine/UnityEngine.AudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.BaselibModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.2f1/Editor/Data/Managed/UnityEngine/UnityEngine.BaselibModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClothModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.2f1/Editor/Data/Managed/UnityEngine/UnityEngine.ClothModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClusterInputModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.2f1/Editor/Data/Managed/UnityEngine/UnityEngine.ClusterInputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClusterRendererModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.2f1/Editor/Data/Managed/UnityEngine/UnityEngine.ClusterRendererModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.2f1/Editor/Data/Managed/UnityEngine/UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CrashReportingModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.2f1/Editor/Data/Managed/UnityEngine/UnityEngine.CrashReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.DirectorModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.2f1/Editor/Data/Managed/UnityEngine/UnityEngine.DirectorModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.FileSystemHttpModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.2f1/Editor/Data/Managed/UnityEngine/UnityEngine.FileSystemHttpModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GameCenterModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.2f1/Editor/Data/Managed/UnityEngine/UnityEngine.GameCenterModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GridModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.2f1/Editor/Data/Managed/UnityEngine/UnityEngine.GridModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.HotReloadModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.2f1/Editor/Data/Managed/UnityEngine/UnityEngine.HotReloadModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.2f1/Editor/Data/Managed/UnityEngine/UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.2f1/Editor/Data/Managed/UnityEngine/UnityEngine.ImageConversionModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.2f1/Editor/Data/Managed/UnityEngine/UnityEngine.InputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.JSONSerializeModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.2f1/Editor/Data/Managed/UnityEngine/UnityEngine.JSONSerializeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.LocalizationModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.2f1/Editor/Data/Managed/UnityEngine/UnityEngine.LocalizationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ParticleSystemModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.2f1/Editor/Data/Managed/UnityEngine/UnityEngine.ParticleSystemModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PerformanceReportingModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.2f1/Editor/Data/Managed/UnityEngine/UnityEngine.PerformanceReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.2f1/Editor/Data/Managed/UnityEngine/UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Physics2DModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.2f1/Editor/Data/Managed/UnityEngine/UnityEngine.Physics2DModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ProfilerModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.2f1/Editor/Data/Managed/UnityEngine/UnityEngine.ProfilerModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ScreenCaptureModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.2f1/Editor/Data/Managed/UnityEngine/UnityEngine.ScreenCaptureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SharedInternalsModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.2f1/Editor/Data/Managed/UnityEngine/UnityEngine.SharedInternalsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteMaskModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.2f1/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteMaskModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteShapeModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.2f1/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteShapeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.StreamingModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.2f1/Editor/Data/Managed/UnityEngine/UnityEngine.StreamingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.StyleSheetsModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.2f1/Editor/Data/Managed/UnityEngine/UnityEngine.StyleSheetsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SubstanceModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.2f1/Editor/Data/Managed/UnityEngine/UnityEngine.SubstanceModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TLSModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.2f1/Editor/Data/Managed/UnityEngine/UnityEngine.TLSModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.2f1/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainPhysicsModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.2f1/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainPhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextCoreModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.2f1/Editor/Data/Managed/UnityEngine/UnityEngine.TextCoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.2f1/Editor/Data/Managed/UnityEngine/UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TilemapModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.2f1/Editor/Data/Managed/UnityEngine/UnityEngine.TilemapModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TimelineModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.2f1/Editor/Data/Managed/UnityEngine/UnityEngine.TimelineModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.2f1/Editor/Data/Managed/UnityEngine/UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIElementsModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.2f1/Editor/Data/Managed/UnityEngine/UnityEngine.UIElementsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UNETModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.2f1/Editor/Data/Managed/UnityEngine/UnityEngine.UNETModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UmbraModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.2f1/Editor/Data/Managed/UnityEngine/UnityEngine.UmbraModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityAnalyticsModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.2f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityAnalyticsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityConnectModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.2f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityConnectModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityTestProtocolModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.2f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityTestProtocolModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.2f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAssetBundleModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.2f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAudioModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.2f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestTextureModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.2f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestWWWModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.2f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VFXModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.2f1/Editor/Data/Managed/UnityEngine/UnityEngine.VFXModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VRModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.2f1/Editor/Data/Managed/UnityEngine/UnityEngine.VRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VehiclesModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.2f1/Editor/Data/Managed/UnityEngine/UnityEngine.VehiclesModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VideoModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.2f1/Editor/Data/Managed/UnityEngine/UnityEngine.VideoModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.WindModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.2f1/Editor/Data/Managed/UnityEngine/UnityEngine.WindModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.XRModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.2f1/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Locator">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.2f1/Editor/Data/Managed/Unity.Locator.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.2f1/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TestRunner">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.2f1/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.2f1/Editor/Data/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Timeline">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.2f1/Editor/Data/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Networking">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.2f1/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GoogleAudioSpatializer">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.2f1/Editor/Data/UnityExtensions/Unity/UnityGoogleAudioSpatializer/RuntimeEditor/UnityEngine.GoogleAudioSpatializer.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpatialTracking">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.2f1/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Analytics.Editor">
+      <HintPath>D:/UNITY_PROJECTS/BORIS/BORIS/BORIS - Escape From Brexit Island/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Analytics.StandardEvents">
+      <HintPath>D:/UNITY_PROJECTS/BORIS/BORIS/BORIS - Escape From Brexit Island/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Analytics.Tracker">
+      <HintPath>D:/UNITY_PROJECTS/BORIS/BORIS/BORIS - Escape From Brexit Island/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
+    </Reference>
+    <Reference Include="mscorlib">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.2f1/Editor/Data/MonoBleedingEdge/lib/mono/unity/mscorlib.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.2f1/Editor/Data/MonoBleedingEdge/lib/mono/unity/System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.2f1/Editor/Data/MonoBleedingEdge/lib/mono/unity/System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.2f1/Editor/Data/MonoBleedingEdge/lib/mono/unity/System.Runtime.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.2f1/Editor/Data/MonoBleedingEdge/lib/mono/unity/System.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.2f1/Editor/Data/MonoBleedingEdge/lib/mono/unity/System.Xml.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityScript">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.2f1/Editor/Data/MonoBleedingEdge/lib/mono/unity/UnityScript.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityScript.Lang">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.2f1/Editor/Data/MonoBleedingEdge/lib/mono/unity/UnityScript.Lang.dll</HintPath>
+    </Reference>
+    <Reference Include="Boo.Lang">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.2f1/Editor/Data/MonoBleedingEdge/lib/mono/unity/Boo.Lang.dll</HintPath>
+    </Reference>
+>>>>>>> parent of d5de9d9... HALF YER MONEY GONE DICK'ED
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -8,7 +8,7 @@ public class BOSS_2 : MonoBehaviour,ICanTakeDamage {
 	[Range(10,100)]
 	public float health = 100f;
 	public float damagePerHit = 10f;
-	public AudioParameters deadSound;
+	public AudioClip deadSound;
 
 	public HealthBarEnemy HealthBar; 
 
@@ -64,7 +64,7 @@ public class BOSS_2 : MonoBehaviour,ICanTakeDamage {
 		if (HealthBar != null)
 			HealthBar.currentHealth = health;
 		if (isDead) {
-			SoundManager.PlayRandomSound(deadSound.AudioClips, 1.0f, true);
+			SoundManager.PlaySfx (deadSound);
 			anim.SetTrigger ("Dead");
 			HealthBar.gameObject.SetActive (false);
 			var boxCo = GetComponents<BoxCollider2D> ();

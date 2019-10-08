@@ -32,7 +32,7 @@ public class EnemyAI : MonoBehaviour, ICanTakeDamage, IPlayerRespawnListener {
 	public AudioClip hurtSound;
 	[Range(0,1)]
 	public float hurtSoundVolume = 0.5f;
-	public AudioParameters deadSounds;
+	public AudioClip[] deadSounds;
 	[Range(0,1)]
 	public float deadSoundVolume = 1.0f;
 
@@ -64,10 +64,11 @@ public class EnemyAI : MonoBehaviour, ICanTakeDamage, IPlayerRespawnListener {
 		_startScale = transform.localScale;
 		_fireIn = fireRate;
 		currentHealth = health;
-		currentHitLeft = maxHitToKill;        
-        isPlaying = true;
-		isSocking = false;      
-    }
+		currentHitLeft = maxHitToKill;
+
+		isPlaying = true;
+		isSocking = false;
+	}
 	
 	// Update is called once per frame
 	public virtual void Update () {
@@ -176,7 +177,7 @@ public class EnemyAI : MonoBehaviour, ICanTakeDamage, IPlayerRespawnListener {
 //		transform.localScale = new Vector3 (1, -1, 1);	//fall
 
 		StopAllCoroutines ();
-        SoundManager.PlayRandomSound(deadSounds.AudioClips, deadSoundVolume, true);
+        SoundManager.PlayRandomSound(deadSounds, deadSoundVolume, true);
 		if (pointToGivePlayer != 0) {
 			GameManager.Instance.AddPoint (pointToGivePlayer);
 			GameManager.Instance.ShowFloatingText ("+" + pointToGivePlayer, transform.position, Color.yellow);
