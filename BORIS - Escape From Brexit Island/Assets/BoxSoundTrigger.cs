@@ -12,7 +12,7 @@ public class BoxSoundTrigger : MonoBehaviour,IPlayerRespawnListener
         if (other.gameObject.GetComponent<Player>() == null)
             return;
 
-        SoundManager.PlayRandomSound(moogSoundClips.AudioClips, 1.0f, true);
+        if (moogSoundClips != null) SoundManager.PlayRandomSound(moogSoundClips.AudioClips, 1.0f, true);
         canTrigger = false;
 
     }

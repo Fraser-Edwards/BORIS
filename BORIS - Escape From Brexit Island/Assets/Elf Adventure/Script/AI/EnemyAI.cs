@@ -176,7 +176,7 @@ public class EnemyAI : MonoBehaviour, ICanTakeDamage, IPlayerRespawnListener {
 //		transform.localScale = new Vector3 (1, -1, 1);	//fall
 
 		StopAllCoroutines ();
-        SoundManager.PlayRandomSound(deadSounds.AudioClips, deadSoundVolume, true);
+        if (deadSounds != null) SoundManager.PlayRandomSound(deadSounds.AudioClips, deadSoundVolume, true);
 		if (pointToGivePlayer != 0) {
 			GameManager.Instance.AddPoint (pointToGivePlayer);
 			GameManager.Instance.ShowFloatingText ("+" + pointToGivePlayer, transform.position, Color.yellow);

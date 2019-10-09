@@ -24,7 +24,7 @@ public class GiveHealth : MonoBehaviour,IPlayerRespawnListener
 
 		SoundManager.PlaySfx (soundEffect, soundEffectVolume);
 
-        SoundManager.PlayRandomSound(passportSound.AudioClips, passportSoundVolume, true);
+        if(passportSound != null) SoundManager.PlayRandomSound(passportSound.AudioClips, passportSoundVolume, true);
 
         gameObject.SetActive (false);
 	}

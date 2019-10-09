@@ -304,7 +304,7 @@ public class Player : MonoBehaviour, ICanTakeDamage {
 			if (meleeAttack.Attack ()) {
 				anim.SetTrigger ("melee_attack");
 				SoundManager.PlaySfx (meleeAttackSound, meleeAttackSoundVolume);
-                SoundManager.PlayRandomSound(AttackVoiceClips.AudioClips, voice: true);
+                if (AttackVoiceClips != null) SoundManager.PlayRandomSound(AttackVoiceClips.AudioClips, voice: true);
             }
 		}
 	}
@@ -319,7 +319,7 @@ public class Player : MonoBehaviour, ICanTakeDamage {
 			if (rangeAttack.Fire ()) {
 				anim.SetTrigger ("range_attack");
 				SoundManager.PlaySfx (rangeAttackSound, rangeAttackSoundVolume);
-                SoundManager.PlayRandomSound(AttackVoiceClips.AudioClips, voice: true);
+                if (AttackVoiceClips != null) SoundManager.PlayRandomSound(AttackVoiceClips.AudioClips, voice: true);
             }
 		}
 	}
@@ -384,7 +384,7 @@ public class Player : MonoBehaviour, ICanTakeDamage {
 			return;
 		
 		SoundManager.PlaySfx (hurtSound, hurtSoundVolume);
-        SoundManager.PlayRandomSound(HurtVoiceClips.AudioClips, voice: true);
+        if (HurtVoiceClips != null) SoundManager.PlayRandomSound(HurtVoiceClips.AudioClips, voice: true);
         if (HurtEffect != null)
 			Instantiate (HurtEffect, instigator.transform.position, Quaternion.identity);
         
@@ -411,7 +411,7 @@ public class Player : MonoBehaviour, ICanTakeDamage {
         if (!isPlaying)
             return;
 
-        SoundManager.PlayRandomSound(HurtVoiceClips.AudioClips, voice: true);
+        if (HurtVoiceClips != null) SoundManager.PlayRandomSound(HurtVoiceClips.AudioClips, voice: true);
         SoundManager.PlaySfx(LostCoinSound);
 
         if (GodMode)

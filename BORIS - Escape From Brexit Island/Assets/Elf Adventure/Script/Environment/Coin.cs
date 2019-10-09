@@ -15,7 +15,7 @@ public class Coin : MonoBehaviour, IPlayerRespawnListener {
 		if (other.gameObject.GetComponent<Player> () == null)
 			return;
 
-		SoundManager.PlayRandomSound(soundClips.AudioClips, soundVolume, voice: true);
+        if (soundClips != null) SoundManager.PlayRandomSound(soundClips.AudioClips, soundVolume, voice: true);
         SoundManager.PlaySfx(soundSFX, soundVolume);
 
         GameManager.Instance.AddCoin (coinToAdd);

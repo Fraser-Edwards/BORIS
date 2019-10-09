@@ -127,7 +127,7 @@ public class BOSS_3 : MonoBehaviour,ICanTakeDamage {
 		if (HealthBar != null)
 			HealthBar.currentHealth = health;
 		if (isDead) {
-			SoundManager.PlayRandomSound(deadSound.AudioClips, voice: true);
+            if (deadSound != null) SoundManager.PlayRandomSound(deadSound.AudioClips, voice: true);
 			anim.SetTrigger ("Dead");
 			HealthBar.gameObject.SetActive (false);
 			var boxCo = GetComponents<BoxCollider2D> ();

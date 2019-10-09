@@ -24,7 +24,7 @@ public class MonsterIV : MonoBehaviour, ICanTakeDamage, IPlayerRespawnListener {
 	}
 
 	public void Dead(){
-		SoundManager.PlayRandomSound(soundDead.AudioClips, 1.0f, true);
+        if (soundDead != null) SoundManager.PlayRandomSound(soundDead.AudioClips, 1.0f, true);
 		GameManager.Instance.AddPoint(scoreRewarded);
 
 		if (deadFx != null)
