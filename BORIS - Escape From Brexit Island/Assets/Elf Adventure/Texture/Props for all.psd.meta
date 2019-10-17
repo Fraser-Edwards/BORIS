@@ -2,7 +2,7 @@ fileFormatVersion: 2
 guid: 32d93def5134ac944adcc3ff70b548ab
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Peach
+    21300000: Peach_original
     21300002: Block Random Broken 2
     21300004: Block Random Broken 4
     21300006: Block Random Broken 3
@@ -93,6 +93,7 @@ TextureImporter:
     21300176: Props for all_2
     21300178: Platform_easy
     21300180: finish_flag
+    21300182: Props for all_3
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -1446,7 +1447,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Peach
+      name: Peach_original
       rect:
         serializedVersion: 2
         x: 226
@@ -1801,6 +1802,26 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: ce8dbbc2f510998438e818d642cb615d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Props for all_3
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 245
+        width: 113
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41b0486c060833b4e8b9701109bd1398
       vertices: []
       indices: 
       edges: []
