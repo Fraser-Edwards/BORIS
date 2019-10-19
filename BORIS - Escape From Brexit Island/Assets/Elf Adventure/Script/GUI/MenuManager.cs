@@ -12,6 +12,7 @@ public class MenuManager : MonoBehaviour {
 	public GameObject GameFinish;
 	public GameObject GamePause;
 	public GameObject LoadingScreen;
+    public GameObject GameWon;
 
 	void Awake(){
 		Instance = this;
@@ -21,6 +22,7 @@ public class MenuManager : MonoBehaviour {
 		GameFinish.SetActive (false);
 		GamePause.SetActive (false);
 		LoadingScreen.SetActive (true);
+        GameWon.SetActive(false);
 	}
 
 	// Use this for initialization
@@ -49,8 +51,11 @@ public class MenuManager : MonoBehaviour {
 	}
 
 	public void Gamefinish(){
-		StartCoroutine (GamefinishCo (2));
-	}
+            StartCoroutine(GamefinishCo(2));       
+	}	
+    public void Gamewon(){
+            StartCoroutine(GameWonCo(2));
+    }
 
 	public void GameOver(){
 		StartCoroutine (GameOverCo (1));
@@ -99,7 +104,16 @@ public class MenuManager : MonoBehaviour {
 		GameFinish.SetActive (true);
 	}
 
-	IEnumerator GameOverCo(float time){
+    IEnumerator GameWonCo(float time)
+    {
+        GUI.SetActive(false);
+
+        yield return new WaitForSeconds(time);
+
+        GameWon.SetActive(true);
+    }
+
+    IEnumerator GameOverCo(float time){
 		GUI.SetActive (false);
 
 		yield return new WaitForSeconds (time);
