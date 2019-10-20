@@ -15,7 +15,9 @@ public class GameManager: MonoBehaviour {
 	public GameObject FloatingText;
 	private MenuManager menuManager;
 
-	[Header("Default Value")]
+    public bool isFinalLevel = false;
+
+    [Header("Default Value")]
 	public int defaultLive = 10;
 	public int defaultBullet = 3;
 
@@ -132,7 +134,17 @@ public class GameManager: MonoBehaviour {
 	public void GameFinish(){
 		State = GameState.Finish;
 		Player.GameFinish ();
-		MenuManager.Instance.Gamefinish ();
+        if (isFinalLevel)
+        {
+            MenuManager.Instance.Gamewon();
+            soundManager.musicAudio.Stop(); 
+            soundManager.musicAudio.clip = soundManager.musicsWin;
+            soundManager.musicAudio.Play();
+        }
+        else
+        {
+            MenuManager.Instance.Gamefinish();
+        }
 		SoundManager.PlaySfx (soundManager.soundGamefinish, 1.0f, true);
 
 		//save coins and points

@@ -15,8 +15,8 @@ public class SoundManager : MonoBehaviour {
 	public AudioClip musicsGame;
 	[Range(0,1)]
 	public float musicsGameVolume = 0.5f;
-
-	[Tooltip("Place the sound in this to call it in another script by: SoundManager.PlaySfx(soundname);")]
+    public AudioClip musicsWin;
+    [Tooltip("Place the sound in this to call it in another script by: SoundManager.PlaySfx(soundname);")]
 	public AudioClip soundClick;
 	public AudioClip soundGamefinish;
 	public AudioClip soundGameover;
@@ -26,7 +26,7 @@ public class SoundManager : MonoBehaviour {
     public AudioMixerGroup VocalBus;
 
 
-    private AudioSource musicAudio;
+    public AudioSource musicAudio;
 	private AudioSource soundFx;
     private AudioSource voiceFx;
 
@@ -41,8 +41,7 @@ public class SoundManager : MonoBehaviour {
 	}
 	// Use this for initialization
 	void Awake(){
-		Instance = this;
-		musicAudio = gameObject.AddComponent<AudioSource> ();
+		Instance = this;		
 		musicAudio.loop = true;
 		musicAudio.volume = 0.5f;
 		soundFx = gameObject.AddComponent<AudioSource>();

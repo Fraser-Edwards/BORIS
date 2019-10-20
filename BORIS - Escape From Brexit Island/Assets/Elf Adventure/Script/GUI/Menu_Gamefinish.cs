@@ -17,8 +17,8 @@ public class Menu_Gamefinish : MonoBehaviour {
 
 	void Awake(){
 		Buttons.SetActive (false);
-		if (LevelManager.Instance.isLastLevelOfWorld)
-			Next.SetActive (false);		//dont show the next button when this is the final level
+		//if (LevelManager.Instance.isLastLevelOfWorld)
+			//Next.SetActive (false);		//dont show the next button when this is the final level
 	}
 
 	// Use this for initialization
