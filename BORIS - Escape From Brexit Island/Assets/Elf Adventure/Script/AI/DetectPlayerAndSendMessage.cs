@@ -13,7 +13,7 @@ public class DetectPlayerAndSendMessage : MonoBehaviour {
 			foreach (var target in Targets)
 				target.SendMessage (message);
 
-			SoundManager.PlaySfx (detectSound, detectSoundVolume);
+			SoundManager.PlaySfx(detectSound, detectSoundVolume, true);
 			gameObject.SetActive (false);
 		}
 	}
