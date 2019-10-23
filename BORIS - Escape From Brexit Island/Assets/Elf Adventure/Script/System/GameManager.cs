@@ -10,6 +10,9 @@ public class GameManager: MonoBehaviour {
 	public enum ZeroLivesAction{ResetHighestWorlds, ResetAllWorlds};
 	public ZeroLivesAction zeroLiveAction;
 
+    [Header("Unlock all Levels")]
+    public bool cheatUnlockAllWorlds = false;
+
 	public GameObject FadeInEffect;
 	[Header("Floating Text")]
 	public GameObject FloatingText;
@@ -38,7 +41,10 @@ public class GameManager: MonoBehaviour {
 
 			Player = FindObjectOfType<Player> ();
 		}
-	}
+
+        if (cheatUnlockAllWorlds) PlayerPrefs.SetInt(GlobalValue.WorldReached, 5);
+
+    }
 
 
 	public int Point{ get; set; }
