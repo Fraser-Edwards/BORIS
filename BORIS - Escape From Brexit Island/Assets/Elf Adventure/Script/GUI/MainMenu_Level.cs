@@ -36,4 +36,12 @@ public class MainMenu_Level : MonoBehaviour {
 
 		SceneManager.LoadSceneAsync (loadscene);
 	}
+
+    public void showIntro()
+    {
+        MainMenuHomeScene.Instance.showIntroText();
+
+    }
+
+
 }

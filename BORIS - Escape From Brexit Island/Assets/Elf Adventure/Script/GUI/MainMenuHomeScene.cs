@@ -9,7 +9,9 @@ public class MainMenuHomeScene : MonoBehaviour {
 	public GameObject LoadingScreen;
 	public GameObject LevelsChoose;
 	public GameObject CharacterChoose;
-	public GameObject[] WorldLevel;
+    public GameObject introText;
+    public GameObject creditsText;
+    public GameObject[] WorldLevel;
 
 	SoundManager soundManager;
 
@@ -25,7 +27,8 @@ public class MainMenuHomeScene : MonoBehaviour {
 		LevelsChoose.SetActive (false);
 		LoadingScreen.SetActive (true);
 		CharacterChoose.SetActive (false);
-	}
+        introText.SetActive(false);
+    }
 	
 	public void OpenWorld(int world){
 		WorldsChoose.SetActive (false);
@@ -53,8 +56,9 @@ public class MainMenuHomeScene : MonoBehaviour {
 		StartMenu.SetActive (true);
 		WorldsChoose.SetActive (false);
 		CharacterChoose.SetActive (false);
+        creditsText.SetActive(false);
 
-		SoundManager.PlaySfx (soundManager.soundClick);
+        SoundManager.PlaySfx (soundManager.soundClick);
 	}
 
 	public void OpenCharacterChoose(){
@@ -64,4 +68,20 @@ public class MainMenuHomeScene : MonoBehaviour {
 
 		SoundManager.PlaySfx (soundManager.soundClick);
 	}
+
+    public void showIntroText()
+    {
+        LevelsChoose.SetActive(false); 
+        introText.SetActive(true);
+        
+        SoundManager.PlaySfx(soundManager.soundClick);
+    }
+
+    public void showCredits()
+    {
+        StartMenu.SetActive(false);
+        creditsText.SetActive(true);
+
+        SoundManager.PlaySfx(soundManager.soundClick);
+    }
 }
