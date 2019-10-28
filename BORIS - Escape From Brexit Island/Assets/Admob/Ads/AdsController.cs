@@ -45,7 +45,7 @@ public class AdsController : MonoBehaviour {
 		#endif
 
 		// Create a 320x50 banner at the top of the screen.
-		bannerView = new BannerView(adUnitId, AdSize.SmartBanner, AdPosition.Bottom);
+		bannerView = new BannerView(adUnitId, AdSize.SmartBanner, AdPosition.Top);
 		//
 		bannerView.OnAdLoaded+=HandleEventHandler;
 		// Create an empty ad request.
