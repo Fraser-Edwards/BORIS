@@ -10,6 +10,8 @@ public class MenuManager : MonoBehaviour {
 	public GameObject GUI;
 	public GameObject Gameover;
 	public GameObject GameFinish;
+	public GameObject GameBrexitText;
+	public GameObject GameFinishBrexit;
 	public GameObject GamePause;
 	public GameObject LoadingScreen;
     public GameObject GameWon;
@@ -57,7 +59,12 @@ public class MenuManager : MonoBehaviour {
             StartCoroutine(GameWonCo(2));
     }
 
-	public void GameOver(){
+    public void GameBexitDeal()
+    {
+        StartCoroutine(GameBexitDealCo(0.2f));
+    }
+
+    public void GameOver(){
 		StartCoroutine (GameOverCo (1));
 	}
 
@@ -112,10 +119,19 @@ public class MenuManager : MonoBehaviour {
 
         GameWon.SetActive(true);
     }
+       IEnumerator GameBexitDealCo(float time)
+    {
+        GUI.SetActive(false);
+        GameBrexitText.SetActive(false);
+
+        yield return new WaitForSeconds(time);
+
+        GameFinishBrexit.SetActive(true);
+    }
 
     IEnumerator GameOverCo(float time){
 		GUI.SetActive (false);
-
+        
 		yield return new WaitForSeconds (time);
 
 		Gameover.SetActive (true);

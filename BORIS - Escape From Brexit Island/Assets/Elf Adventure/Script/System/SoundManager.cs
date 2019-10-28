@@ -79,7 +79,7 @@ public class SoundManager : MonoBehaviour {
 	}
 
 	public static void PlayMusic(AudioClip clip, float volume){
-		Instance.PlaySound (clip, Instance.musicAudio, volume);
+        Instance.PlaySound(clip, Instance.musicAudio, volume);
 	}
 
     public static void PlayRandomSound(AudioClip[] clips, float volume = 1.0f, bool voice = false)

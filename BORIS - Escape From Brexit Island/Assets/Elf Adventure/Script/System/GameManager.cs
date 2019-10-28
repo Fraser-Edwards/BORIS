@@ -19,6 +19,7 @@ public class GameManager: MonoBehaviour {
 	private MenuManager menuManager;
 
     public bool isFinalLevel = false;
+    public bool isBrexitDealLevel = false;
 
     [Header("Default Value")]
 	public int defaultLive = 10;
@@ -144,6 +145,13 @@ public class GameManager: MonoBehaviour {
         {
             MenuManager.Instance.Gamewon();
             soundManager.musicAudio.Stop(); 
+            soundManager.musicAudio.clip = soundManager.musicsWin;
+            soundManager.musicAudio.Play();
+        }
+        else if (isBrexitDealLevel)
+        {
+            MenuManager.Instance.GameBrexitText.SetActive(true);
+            soundManager.musicAudio.Stop();
             soundManager.musicAudio.clip = soundManager.musicsWin;
             soundManager.musicAudio.Play();
         }
